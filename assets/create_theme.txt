@@ -1,0 +1,17 @@
+How to edit the Current Theme:
+
+1. Open "theme.txt" in (ApplicationRunPath)/assets/settings/
+
+2. Insert any Python Code.
+
+	Empty lines, lines starting with "#" and text written under [end],
+	will be irgnored and be treated as Comments.
+	The code is executed upon startup, before the UI build and stops, 
+	after the [end] incicator
+
+3. Save and Restart your application
+
+	That's it!
+	
+Useful Variables:
+	self.background, self.foreground, self.draw_off, self.draw_on, self.font

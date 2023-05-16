@@ -1,0 +1,13 @@
+# General Theme
+self.foreground="black"
+self.background="white"
+
+# Draw Field
+self.draw_on="black"
+self.draw_off="white"
+
+
+# Font Style
+self.font="Dejavu 10"
+
+[end]

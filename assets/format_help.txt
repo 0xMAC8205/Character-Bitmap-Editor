@@ -1,0 +1,36 @@
+How to create your own formatted output:
+
+1. Create a new file, with the '.frm' extention
+
+
+2. Insert your custom format syntax
+
+Example: '  .byte ${$data}, ${$data}, ${$data}, ${$data}  ; Character ${$char} | {char} \n', excluding '
+Output:	 '  .byte $45, $3E, $F0, $3C  ; Character $08 | 8\n' 	(of course '\n' will be a new line indicator)
+
+	{$data} = Counting Data in Hex Format		Example: 45, 3E, F0, 3C
+	{data} = Counting Data in Decimal Format	Example: 69, 62, 240, 60
+ 
+	{$char} = Index as Hex format			Example: 08, 09, 0A, 0B
+	{char} = Index as Decimal format		Example: 8, 9, 10, 11
+
+	The Rest will be left unchanged, only replacing shown format markers.
+	You only need to write a single line, since the pattern repeats until Index reaches end.
+
+
+3. Save at a custom location, or in the assets folder, found in the applications run path
+
+
+4. Automatic Install:
+		Open format manager, under 'Export > Manage Custom Formats'
+		Add / Remove the format file.
+		Click "save", and thats it!
+
+   Manual Install:
+		Copy the .frm file, to the assets folder, in the applications run path
+		edit "custom_format.txt" and add / delete the file.
+		Just insert the Filename without path >> "custom.frm"
+
+		It's important, that every filename be written in it's own line!
+
+		Restart the application, and you're good to go!

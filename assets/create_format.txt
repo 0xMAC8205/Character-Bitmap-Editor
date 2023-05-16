@@ -1,0 +1,27 @@
+How to create your own Format File:
+
+1. Create a File, with the ".frm" extention, but any other will work just fine
+
+2. Write the Syntax
+
+   The Syntax is just one Line. You can mix Text and Insert Indicators.
+
+Example:
+	'    .byte ${$data}, ${$data}, ${$data}, ${$data}  ; Character ${$char} | {char} \n', exclusing '
+
+The Output will be for example:
+	'    .byte $45, $3E, $F0, $3C  ; Character $08 | 8\n'
+
+	Insert Indicators are:
+
+	{data}	=> Data in Decimal format
+	{char}  => Character number
+	\n	=> New Line
+	\t	=> Tab (4 spaces)
+
+	You can put $ or b infront of the text to indicate a format change
+	{$data} will be converted to Hexadecimal and
+	{bdata}, to binary
+
+	The File is finished, when the Data Index Counter reaches 
+	256 (in 8x8 mode) or 512 (8x16 mode)
