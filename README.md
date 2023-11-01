@@ -3,7 +3,7 @@ A Character ROM Editor for the LS7 Computer, written in Python 3
 
 
 # Overview
-![alt text](https://github.com/0xMAC8205/Character-Bitmap-Editor/assets/55045978/413ec10d-cec2-4d39-969c-e04246f455e8)
+![alt text](https://github.com/0xMAC8205/Character-Bitmap-Editor/assets/55045978/85435fa2-8c8e-4169-ae5d-2cc9a46e5995)
 
 Being written in Python, this editor is multi-platform.
 It's inspired by this program: https://www.min.at/prinz/o/software/pixelfont,
